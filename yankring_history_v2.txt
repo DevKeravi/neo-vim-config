@@ -1,0 +1,100 @@
+1.0,v
+-dev0,v
+v1.121.0,v
+ㅓㅏㅇㅇ,v
+* ㅓㅏㅇㅇ,V
+을,v
+add-comment-button,v
+button,v
+service-request-submit,v
+service-request-comment-submit,v
+submit-id-submit,v
+-->,V
+<!--,V
+        print(update_kwargs),V
+            print(),V
+        print(request.POST),V
+ ,v
+            'indicator_types': indicator_types,,V
+            'ei': queryset.last(),,V
+[0],v
+,V
+            print(ei_date),V
+            ei_date = request.POST.get('ei-date'),V
+notified_at,v
+            ei_type = request.POST.get('ei-type'),V
+            print(notified_at, ei_type, ei_value),V
+수치,v
+e,v
+            HTML('<div>월 데이터를 변경하실때는 당월 1일로 지정해주세요. (5월 지표 = 5월 1일)</div>'),            HTML('<div>빈칸으로 둔 항목은 변경되지 않습니다.</div>'),,V
+                     'notified_at',,V
+            notified_at = req,V
+e[0], e[1].value,v
+dc.enum_to_choice(c.EcosIndicatorType),v
+from dealmatch import (    constants as dc),V
+def enum_to_choice(clazz):    return [(e[0], e[1].value) for e in clazz.__members__.items()],V
+),v
+widget=forms.ChoiceField(,v
+Widget,v
+c,v
+    construction_auth_areas = forms.FloatField(label='건축허가면적', required=False)    construction_cost_index = forms.FloatField(label='건설공사비 지수', required=False)    construction_orders_received = forms.FloatField(label='건축수주액', required=False),V
+                     'construction_auth_areas',                     'construction_cost_index',                     'construction_orders_received',,V
+uuid,v
+=,v
+{},v
+, queryset=queryset,v
+        queryset = kwargs['queryset'],V
+        kwargs['initial']['action'] = 'update_inidcator'        kwargs['initial']['_selected_action'] = queryset.last(),V
+kwargs[''],v
+s,v
+qs,v
+apply,v
+initial,v
+        ei_value = query,V
+        last_value = quer,V
+        print(),V
+빈칸으로 둔 항목은 변경되지 않습니다.,v
+            HTML('<div>빈칸으로 둔 항목은 변경되지 않습니다.</div>'),,V
+수정할 데이터만 입력하시고, 다른 칸은 비어놓으면 빈칸은 변경 되지않습니다.,v
+Div,v
+놓으셔도 됩니다.,v
+action,v
+    action = forms.CharField(widget=forms.HiddenInput()),V
+        self.helper.form_action = ,V
+update,v
+경제 지표 업데이트,v
+from dealmatch_ei import (    models as m),V
+from crispy_forms.helper import FormHelperfrom crispy_forms.layout import (    Layout, Fieldset, HTML, Div, Hidden, Submit, ButtonHolder),V
+공사 허가면적,v
+공사,v
+공사비,v
+허가면적,v
+auth_areas,v
+    construction_auth_areas = forms.FloatField(label='공사 허가면적')    construction_auth_areas = forms.FloatField(label='공사 허가면적'),V
+    construction_auth_areas = forms.FloatField(label='공사 허가면적', required=False),V
+    construction_auth_areas = forms.FloatField(label='공사 허가면적'),V
+{% crispy form %},V
+vidlcx,v
+        exclude = ['uuid'],V
+    def __init__():,V
+    ei_type = forms.ChoiceField(choices=),V
+class AdminUpdateIndicatorForm(forms.ModelForm):,V
+    construction_orders_received = forms.FloatField(required=False)    construction_cost_index = forms.FloatField(required=False)     construction_auth_areas = forms.,V
+Time,v
+        form = AdminUpdateIndicatorForm(),V
+form,v
+from django import forms,V
+{,v
+},v
+{% load crispy_forms_tags %},V
+{},V
+  {{ form }},V
+        form.has_changed,V
+        e,V
+from ,V
+rm -rf ~/.colima/_lima/_networks/user-v2,V
+zsh: command not found: rancher,v
+zsh: command not found: kubectl,v
+{"level":"fatal","msg":"template: :1:21: executing \"\" at \u003cfd_connect \"/Users/demian/.colima/_lima/_networks/user-v2/user-v2_qemu.sock\"\u003e: error calling fd_connect: fd_connect: dial unix /Users/demian/.colima/_lima/_networks/user-v2/user-v2_qemu.sock: connect: connection refused","time":"2024-01-24T15:30:03+09:00"},V
+{"level":"fatal","msg":"template: :1:21: executing \"\" at \u003cfd_connect \"/Users/demian/.colima/_lima/_networks/user-v2/user-v2_qemu.sock\"\u003e: error calling fd_connect: fd_connect: dial unix /Users/demian/.colima/_lima/_networks/user-v2/user-v2_qemu.sock: connect: connection refused","time":"2024-01-24T15:25:25+09:00"},V
+*  딜 제안에 댓글을 달아 협의중 상태로 변경될때 알림을 전송하지 않게 하였습니다.,V

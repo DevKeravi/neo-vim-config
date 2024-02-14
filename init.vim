@@ -466,7 +466,6 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'rking/ag.vim'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'antoinemadec/FixCursorHold.nvim'
@@ -483,6 +482,9 @@ Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'kqito/vim-easy-replace'
 Plug 'kamykn/spelunker.vim'
 Plug 'psliwka/vim-smoothie'
+Plug 'alvan/vim-closetag'
+Plug 'terryma/vim-multiple-cursors'
+
 call plug#end()
 
 let g:ag_working_path_mode="r"
@@ -497,6 +499,14 @@ let g:spelunker_highlight_type = 2
 nmap <silent> ,T :TestFile<CR>
 nmap <silent> ,t :TestNearest<CR>
 nmap <silent> ,s :TestSuite<CR>
+
+" vim-multiple-cursor
+let g:multi_cursor_use_default_mapping=0
+" Default mapping
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
 
 set termguicolors
 lua << EOF

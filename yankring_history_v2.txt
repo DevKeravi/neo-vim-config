@@ -1,100 +1,100 @@
-div,v
-" vim-multiple-cursorlet g:multi_cursor_use_default_mapping=0" Default mappinglet g:multi_cursor_next_key='<C-n>'let g:multi_cursor_prev_key='<C-p>'let g:multi_cursor_skip_key='<C-x>'let g:multi_cursor_quit_key='<Esc>',v
-'terryma/vim-multiple-cursors',v
-        ''.casefold(),V
-<div></div>,V
+        ''.replace(),V
+monokai,v
  ,v
 ",v
+Plug 'Mofiqul/dracula.nvim',V
 ,V
-n,v
-i,v
-Plugin 'alvan/vim-closetag',V
-Plug 'nvim-lua/plenary.nvim',V
-<div>,V
-https://github.com/DevKeravi/neo-vim-config.git,v
-1.0,v
--dev0,v
-v1.121.0,v
-ㅓㅏㅇㅇ,v
-* ㅓㅏㅇㅇ,V
-을,v
-add-comment-button,v
-button,v
-service-request-submit,v
-service-request-comment-submit,v
-submit-id-submit,v
--->,V
-<!--,V
-        print(update_kwargs),V
-            print(),V
-        print(request.POST),V
-            'indicator_types': indicator_types,,V
-            'ei': queryset.last(),,V
-[0],v
-            print(ei_date),V
-            ei_date = request.POST.get('ei-date'),V
-notified_at,v
-            ei_type = request.POST.get('ei-type'),V
-            print(notified_at, ei_type, ei_value),V
-수치,v
-e,v
-            HTML('<div>월 데이터를 변경하실때는 당월 1일로 지정해주세요. (5월 지표 = 5월 1일)</div>'),            HTML('<div>빈칸으로 둔 항목은 변경되지 않습니다.</div>'),,V
-                     'notified_at',,V
-            notified_at = req,V
-e[0], e[1].value,v
-dc.enum_to_choice(c.EcosIndicatorType),v
-from dealmatch import (    constants as dc),V
-def enum_to_choice(clazz):    return [(e[0], e[1].value) for e in clazz.__members__.items()],V
-),v
-widget=forms.ChoiceField(,v
-Widget,v
-c,v
-    construction_auth_areas = forms.FloatField(label='건축허가면적', required=False)    construction_cost_index = forms.FloatField(label='건설공사비 지수', required=False)    construction_orders_received = forms.FloatField(label='건축수주액', required=False),V
-                     'construction_auth_areas',                     'construction_cost_index',                     'construction_orders_received',,V
-uuid,v
-=,v
-{},v
-, queryset=queryset,v
-        queryset = kwargs['queryset'],V
-        kwargs['initial']['action'] = 'update_inidcator'        kwargs['initial']['_selected_action'] = queryset.last(),V
-kwargs[''],v
+Plug 'dracula/vim', { 'as': 'dracula' },V
+dracula,v
+let g:airline_theme='dracula',v
+let g:airline_theme='<theme>',V
+let g:airline_theme='<theme>',v
+Plug 'vim-airline/vim-airline-themes',V
+#,v
+                  href="{% url 'deal-register-select' %}",V
+dealmatch:deal_register,v
+0,v
+1,v
+[118px],v
+여,v
+하,v
+의,v
+ py-8,v
+x,v
+ px-6 py-8,v
+ p-5 md:p-10,v
+a,v
+g,v
+l,v
+3,v
+ class="text-3xl font-bold",v
+딜 등록,v
+      <h1>{% tranaslate '딜 등록' %}</h1>,V
+      <h1></h1>,V
+ mb-2,v
+ pt-10 pb-16,v
+ pt-7 pb-10,v
+5,v
+public,v
+              <div class="mb-10">                <img class="w-full h-auto" src="{% static 'dealmatch/images/private_deal_select_image.png' %}" alt="private-deal">              </div>,V
+              <div class="w-full mb-10 flex justify-center">                <div class="w-3/4">                  <img class="object-fit" src="{% static 'dealmatch/images/public_deal_select_image.png' %}" alt="public-deal">                </div>              </div>,V
+max-w-,v
+360,v
+ items-center,v
+w-3/4 h-3/4,v
+full,v
+auto,v
+업계 전문가들과 네트워크 형성,v
+업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식,v
+익명 또는 기명으로 딜 등록 가능,v
+등록한 딜은 딜 찾기 목록(오픈마켓)에 표시 및 노출,v
+오픈,v
+              <ul class="flex flex-col py-5 px-10 gap-1 text-base text-gray-600 font-normal text-left mb-10">                <li><span class="text-black mr-2.5">1</span>{% translate '등록한 딜은 딜 찾기 목록(오픈마켓)에 표시 및 노출' %}</li>                <li><span class="text-black mr-2.5">2</span>{% translate '익명 또는 기명으로 딜 등록 가능' %}</li>                <li><span class="text-black mr-2.5">3</span>{% translate '업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식' %}</li>                <li><span class="text-black mr-2.5">4</span>{% translate '업계 전문가들과 네트워크 형성' %}</li>              </ul>,V
+              <ul class="flex flex-col py-5 px-5 gap-2 text-base text-gray-600 font-normal text-left mb-10">                <li><span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">1</span>{% translate '등록한 딜은 딜 찾기 목록(오픈마켓)에 표시 및 노출' %}</li>                <li><span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">2</span>{% translate '익명 또는 기명으로 딜 등록 가능' %}</li>                <li><span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">3</span>{% translate '업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식' %}</li>                <li><span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">4</span>{% translate '업계 전문가들과 네트워크 형성' %}</li>              </ul>,V
+10,v
+<span class="text-black mr-2.5">,v
+<span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">,v
 s,v
-qs,v
-apply,v
-initial,v
-        ei_value = query,V
-        last_value = quer,V
-        print(),V
-빈칸으로 둔 항목은 변경되지 않습니다.,v
-            HTML('<div>빈칸으로 둔 항목은 변경되지 않습니다.</div>'),,V
-수정할 데이터만 입력하시고, 다른 칸은 비어놓으면 빈칸은 변경 되지않습니다.,v
-Div,v
-놓으셔도 됩니다.,v
-action,v
-    action = forms.CharField(widget=forms.HiddenInput()),V
-        self.helper.form_action = ,V
-update,v
-경제 지표 업데이트,v
-from dealmatch_ei import (    models as m),V
-from crispy_forms.helper import FormHelperfrom crispy_forms.layout import (    Layout, Fieldset, HTML, Div, Hidden, Submit, ButtonHolder),V
-공사 허가면적,v
-공사,v
-공사비,v
-허가면적,v
-auth_areas,v
-    construction_auth_areas = forms.FloatField(label='공사 허가면적')    construction_auth_areas = forms.FloatField(label='공사 허가면적'),V
-    construction_auth_areas = forms.FloatField(label='공사 허가면적', required=False),V
-    construction_auth_areas = forms.FloatField(label='공사 허가면적'),V
-{% crispy form %},V
-vidlcx,v
-        exclude = ['uuid'],V
-    def __init__():,V
-    ei_type = forms.ChoiceField(choices=),V
-class AdminUpdateIndicatorForm(forms.ModelForm):,V
-    construction_orders_received = forms.FloatField(required=False)    construction_cost_index = forms.FloatField(required=False)     construction_auth_areas = forms.,V
-Time,v
-        form = AdminUpdateIndicatorForm(),V
-form,v
-from django import forms,V
-{,v
+black,v
+인증된 딜매치 회원의 제안을 자유롭게 받아볼 수 있는 방식,v
+오픈마켓에 딜을 등록하여,v
+j,v
+k,v
+Public,v
+오픈 딜,v
+slate-500,v
+Open,v
+        jkp,V
+        <div class="w-full flex flex-col md:flex-row gap-2 border rounded-lg bg-white">          <div class="w-full relative flex flex-col justify-center rounded-md">            <img class="absolute top-0 left-0" src="{% static 'dealmatch/assets/public_deal_ribbon.svg' %}" alt="private-deal-ribbon"></img>            <div class="w-full flex flex-col items-center px-6 py-8 gap-1 font-medium border-b">              <p class="text-slate-500 text-lg">{% translate 'Open Market' %}</p>              <p class="text-2xl font-semibold">{% translate '오픈 딜(Public Deal)' %}</p>            </div>            <div class="flex flex-col px-20 pt-10 pb-16">              <div class="mb-10">                <img class="w-full h-auto" src="{% static 'dealmatch/images/public_deal_select_image.png' %}" alt="public-deal">              </div>              <p class="text-slate-700 text-center mb-8 font-medium text-xl">                {% blocktranslate %}오픈마켓에 딜을 등록하여,<br /> 인증된 딜매치 회원의 제안을 자유롭게 받아볼 수 있는 방식{% endblocktranslate %}              </p>              <ul class="flex flex-col py-5 px-10 gap-1 text-base text-gray-600 font-normal text-left mb-10">                <li><span class="text-black mr-2.5">1</span>{% translate '등록한 딜은 딜 찾기 목록(오픈마켓)에 표시 및 노출' %}</li>                <li><span class="text-black mr-2.5">2</span>{% translate '익명 또는 기명으로 딜 등록 가능' %}</li>                <li><span class="text-black mr-2.5">3</span>{% translate '업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식' %}</li>                <li><span class="text-black mr-2.5">4</span>{% translate '업계 전문가들과 네트워크 형성' %}</li>              </ul>              <div class="w-full flex justify-center">                <a class="dm-button dm-button-sky px-10 py-[18px] !rounded-full min-w-60 justify-center">                  {% translate '오픈 딜로 등록' %}                </a>              </div>            </div>          </div>        </div>,V
+png,v
+images/,v
+/,v
+lat,v
+div,v
+              <img class="w-[72px] h-[72px] absolute top-0 -left-0.5" src="{% static 'dealmatch/assets/teal_ribbon_tl.svg' %}" alt="ribbon-top-left" />              <img class="w-[72px] h-[72px] absolute -bottom-0.5 right-0" src="{% static 'dealmatch/assets/teal_ribbon_br.svg' %}" alt="ribbon-bottom-right" />,V
+text-black ,v
+ font-bold,v
+lg,v
+m,v
+semibold,v
+하기,v
 },v
+%,v
+text-[13px],v
+                <li><span class="text-black font-bold mr-2">2</span>{% translate '업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식' %}</li>,V
+ㄷ익명 또는 기명으로 딜 등록 가능,v
+ㄷ,v
+                <li><span class="text-black font-bold mr-2">2</span>{% translate 'ㄷ익명 또는 기명으로 딜 등록 가능' %}</li>,V
+                <li><span class="text-black font-bold mr-2">3</span>{% blocktranslate %}소액의 월 정액 플랫폼 사용료(구독료)만으로<br /><span class="ml-3">업계 전문가들과 네트워크 형성</span>{% endblocktranslate %}</li>,V
+업계 종사자 회원들이 딜 열람 후 제안하는 방식,v
+오픈마켓에 딜 등록,v
+base,v
+llll양한 회원의 제안을 자유롭게 받아볼 수 있는 방식,v
+다,v
+ px-3,v
+ gap-10,v
+justify-center,v
+ justify-center,v
+                {% translate '오픈마켓에 딜을 등록하여, 다양한 회원의 제안을 자유롭게 받아볼 수 있는 방식' %},V
+>,v
+ bg-gray-50,v

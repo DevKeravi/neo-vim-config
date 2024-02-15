@@ -148,6 +148,28 @@ endif
 " Plug 'jfo/hound.vim'
 
 " Tell vim-plug we finished declaring plugins, so it can load them
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'rking/ag.vim'
+Plug 'sindrets/diffview.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'antoinemadec/FixCursorHold.nvim'
+Plug 'nvim-neotest/neotest'
+Plug 'vim-test/vim-test'
+Plug 'tpope/vim-fugitive'
+Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
+" Plug 'ryanoasis/vim-devicons' Icons without colours
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'gingerhot/conque-term-vim'
+Plug 'jpalardy/vim-slime'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'kqito/vim-easy-replace'
+Plug 'kamykn/spelunker.vim'
+Plug 'psliwka/vim-smoothie'
+Plug 'alvan/vim-closetag'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 " ============================================================================
@@ -220,7 +242,7 @@ if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|s
     if !has('gui_running')
         let &t_Co = 256
     endif
-    " colorscheme vim-monokai-tasty
+    colorscheme vim-monokai-tasty
     " colorscheme dracula
 else
     " colorscheme delek
@@ -428,7 +450,7 @@ endif
 " Airline ------------------------------
 
 let g:airline_powerline_fonts = 0
-" let g:airline_theme = 'dracula'
+let g:airline_theme = 'dracula'
 let g:airline#extensions#whitespace#enabled = 0
 
 " Fancy Symbols!!
@@ -461,31 +483,6 @@ endif
 if filereadable(expand(custom_configs_path))
   execute "source " . custom_configs_path
 endif
-
-call plug#begin()
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nvim-lua/plenary.nvim'
-Plug 'rking/ag.vim'
-Plug 'sindrets/diffview.nvim'
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'antoinemadec/FixCursorHold.nvim'
-Plug 'nvim-neotest/neotest'
-Plug 'vim-test/vim-test'
-Plug 'tpope/vim-fugitive'
-Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
-" Plug 'ryanoasis/vim-devicons' Icons without colours
-Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
-Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'gingerhot/conque-term-vim'
-Plug 'jpalardy/vim-slime'
-Plug 'dracula/vim', {'as': 'dracula'}
-Plug 'kqito/vim-easy-replace'
-Plug 'kamykn/spelunker.vim'
-Plug 'psliwka/vim-smoothie'
-Plug 'alvan/vim-closetag'
-Plug 'terryma/vim-multiple-cursors'
-
-call plug#end()
 
 let g:ag_working_path_mode="r"
 let test#python#runner = 'pytest'

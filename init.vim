@@ -81,21 +81,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Pending tasks list
 Plug 'fisadev/FixedTaskList.vim'
-" Async autocompletion
-if using_neovim && vim_plug_just_installed
-    Plug 'Shougo/deoplete.nvim', {'do': ':autocmd VimEnter * UpdateRemotePlugins'}
-else
-    Plug 'Shougo/deoplete.nvim'
-endif
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
-" Python autocompletion
-Plug 'deoplete-plugins/deoplete-jedi'
 " Completion from other opened files
 Plug 'Shougo/context_filetype.vim'
-" Just to add the python go-to-definition and similar features, autocompletion
-" from this plugin is disabled
-Plug 'davidhalter/jedi-vim'
 " Automatically close parenthesis, etc
 Plug 'Townk/vim-autoclose'
 " Surround
@@ -150,6 +139,7 @@ endif
 " Tell vim-plug we finished declaring plugins, so it can load them
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'yaegassy/coc-htmldjango', {'do': 'yarn install --frozen-lockfile'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'rking/ag.vim'
 Plug 'sindrets/diffview.nvim'
@@ -170,6 +160,8 @@ Plug 'kamykn/spelunker.vim'
 Plug 'psliwka/vim-smoothie'
 Plug 'alvan/vim-closetag'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'andythigpen/nvim-coverage'
+
 call plug#end()
 
 " ============================================================================
@@ -250,15 +242,15 @@ else
 endif
 
 " needed so deoplete can auto select the first suggestion
-set completeopt+=noinsert
+" set completeopt+=noinsert
 " comment this line to enable autocompletion preview window
 " (displays documentation related to the selected completion option)
 " disabled by default because preview makes the window flicker
-set completeopt-=preview
+" set completeopt-=preview
 
 " autocompletion of files and commands behaves like shell
 " (complete only the common part, list the options that match)
-set wildmode=list:longest
+" set wildmode=list:longest
 
 " save as sudo
 ca w!! w !sudo tee "%"
@@ -376,29 +368,19 @@ nmap ,c :Commands<CR>
 " Deoplete -----------------------------
 
 " Use deoplete.
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option({
-\   'ignore_case': v:true,
-\   'smart_case': v:true,
-\})
+"let g:deoplete#enable_at_startup = 1
+"call deoplete#custom#option({
+"\   'ignore_case': v:true,
+"\   'smart_case': v:true,
+"\})
 " complete with words from any opened file
 let g:context_filetype#same_filetypes = {}
 let g:context_filetype#same_filetypes._ = '_'
 
-" Jedi-vim ------------------------------
-
-" Disable autocompletion (using deoplete instead)
-let g:jedi#completions_enabled = 0
-
 " All these mappings work only for python code:
 " Go to definition
-let g:jedi#goto_command = ',d'
-" Find ocurrences
-let g:jedi#usages_command = ',o'
-" Find assignments
-let g:jedi#goto_assignments_command = ',a'
-" Go to definition in new tab
-nmap ,D :tab split<CR>:call jedi#goto()<CR>
+" nmap <silent> ,d :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <silent> ,d :call CocAction('jumpDefinition')<CR>
 
 " Ack.vim ------------------------------
 
@@ -505,9 +487,11 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
+
 set termguicolors
 lua << EOF
 require("bufferline").setup{}
+require("coverage").setup{}
 EOF
 
 " 이 옵션은 버퍼를 수정한 직후 버퍼를 감춰지도록 한다.
@@ -532,3 +516,4 @@ nmap ,b :NERDTreeToggle<CR>
 set clipboard=unnamed
 colorscheme dracula
 set nospell
+

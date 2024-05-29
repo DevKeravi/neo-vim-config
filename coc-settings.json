@@ -1,14 +1,12 @@
 {
     "pyright.testing.provider": "pytest",
-    "htmldjango.formatting.provide" : "none",
+    "htmldjango.formatting.provider": "none",
     "htmldjango.djlint.enableLint": false,
-    "htmldjango.completion.enable": false,
-    "tailwindCSS.includeLanguages": { "eelixir": "html", "elixir": "html", "eruby": "html", "html.twig": "html", "htmldjango": "html" },
-    "languageserver": {
-      "golang": {
-        "command": "gopls",
-        "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-        "filetypes": ["go"]
-      }
-    }
+    "htmldjango.completion.enable": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pydocstyleEnabled": true,
+    "python.jediEnabled": true,
+    "python.venvPath": "~/workspace/venv-dealmatch",
+    "python.globalModuleInstallation": false
 }

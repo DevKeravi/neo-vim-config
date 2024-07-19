@@ -1,100 +1,100 @@
-        ''.replace(),V
-monokai,v
+timezone.now(),v
+.str,v
+specification,v
+            if data:,V
+    transport_module =,V
+용도지역안에서의 건폐율,v
+    @pytest.mark.django_db,V
+(APIView),v
+pattern = r'\d+\.\s*(.*?주거지역|농림지역|.*?지역)\s*:\s*(\d+)퍼센트',v
+    def create_tables(self):,V
+            self.doc.create_table(),V
+    def add_tables(),V
+p,v
+        data = {k:', '.join(v) if isinstance(v, list)\                               else v\                               for k,v in data.items()},V
  ,v
-",v
-Plug 'Mofiqul/dracula.nvim',V
-,V
-Plug 'dracula/vim', { 'as': 'dracula' },V
-dracula,v
-let g:airline_theme='dracula',v
-let g:airline_theme='<theme>',V
-let g:airline_theme='<theme>',v
-Plug 'vim-airline/vim-airline-themes',V
-#,v
-                  href="{% url 'deal-register-select' %}",V
-dealmatch:deal_register,v
-0,v
-1,v
-[118px],v
-여,v
-하,v
-의,v
- py-8,v
-x,v
- px-6 py-8,v
- p-5 md:p-10,v
-a,v
-g,v
-l,v
-3,v
- class="text-3xl font-bold",v
-딜 등록,v
-      <h1>{% tranaslate '딜 등록' %}</h1>,V
-      <h1></h1>,V
- mb-2,v
- pt-10 pb-16,v
- pt-7 pb-10,v
-5,v
-public,v
-              <div class="mb-10">                <img class="w-full h-auto" src="{% static 'dealmatch/images/private_deal_select_image.png' %}" alt="private-deal">              </div>,V
-              <div class="w-full mb-10 flex justify-center">                <div class="w-3/4">                  <img class="object-fit" src="{% static 'dealmatch/images/public_deal_select_image.png' %}" alt="public-deal">                </div>              </div>,V
-max-w-,v
-360,v
- items-center,v
-w-3/4 h-3/4,v
-full,v
-auto,v
-업계 전문가들과 네트워크 형성,v
-업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식,v
-익명 또는 기명으로 딜 등록 가능,v
-등록한 딜은 딜 찾기 목록(오픈마켓)에 표시 및 노출,v
-오픈,v
-              <ul class="flex flex-col py-5 px-10 gap-1 text-base text-gray-600 font-normal text-left mb-10">                <li><span class="text-black mr-2.5">1</span>{% translate '등록한 딜은 딜 찾기 목록(오픈마켓)에 표시 및 노출' %}</li>                <li><span class="text-black mr-2.5">2</span>{% translate '익명 또는 기명으로 딜 등록 가능' %}</li>                <li><span class="text-black mr-2.5">3</span>{% translate '업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식' %}</li>                <li><span class="text-black mr-2.5">4</span>{% translate '업계 전문가들과 네트워크 형성' %}</li>              </ul>,V
-              <ul class="flex flex-col py-5 px-5 gap-2 text-base text-gray-600 font-normal text-left mb-10">                <li><span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">1</span>{% translate '등록한 딜은 딜 찾기 목록(오픈마켓)에 표시 및 노출' %}</li>                <li><span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">2</span>{% translate '익명 또는 기명으로 딜 등록 가능' %}</li>                <li><span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">3</span>{% translate '업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식' %}</li>                <li><span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">4</span>{% translate '업계 전문가들과 네트워크 형성' %}</li>              </ul>,V
-10,v
-<span class="text-black mr-2.5">,v
-<span class="text-white bg-black rounded-full px-1.5 py-0.5 text-xs mr-2.5">,v
-s,v
-black,v
-인증된 딜매치 회원의 제안을 자유롭게 받아볼 수 있는 방식,v
-오픈마켓에 딜을 등록하여,v
-j,v
+],v
 k,v
-Public,v
-오픈 딜,v
-slate-500,v
-Open,v
-        jkp,V
-        <div class="w-full flex flex-col md:flex-row gap-2 border rounded-lg bg-white">          <div class="w-full relative flex flex-col justify-center rounded-md">            <img class="absolute top-0 left-0" src="{% static 'dealmatch/assets/public_deal_ribbon.svg' %}" alt="private-deal-ribbon"></img>            <div class="w-full flex flex-col items-center px-6 py-8 gap-1 font-medium border-b">              <p class="text-slate-500 text-lg">{% translate 'Open Market' %}</p>              <p class="text-2xl font-semibold">{% translate '오픈 딜(Public Deal)' %}</p>            </div>            <div class="flex flex-col px-20 pt-10 pb-16">              <div class="mb-10">                <img class="w-full h-auto" src="{% static 'dealmatch/images/public_deal_select_image.png' %}" alt="public-deal">              </div>              <p class="text-slate-700 text-center mb-8 font-medium text-xl">                {% blocktranslate %}오픈마켓에 딜을 등록하여,<br /> 인증된 딜매치 회원의 제안을 자유롭게 받아볼 수 있는 방식{% endblocktranslate %}              </p>              <ul class="flex flex-col py-5 px-10 gap-1 text-base text-gray-600 font-normal text-left mb-10">                <li><span class="text-black mr-2.5">1</span>{% translate '등록한 딜은 딜 찾기 목록(오픈마켓)에 표시 및 노출' %}</li>                <li><span class="text-black mr-2.5">2</span>{% translate '익명 또는 기명으로 딜 등록 가능' %}</li>                <li><span class="text-black mr-2.5">3</span>{% translate '업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식' %}</li>                <li><span class="text-black mr-2.5">4</span>{% translate '업계 전문가들과 네트워크 형성' %}</li>              </ul>              <div class="w-full flex justify-center">                <a class="dm-button dm-button-sky px-10 py-[18px] !rounded-full min-w-60 justify-center">                  {% translate '오픈 딜로 등록' %}                </a>              </div>            </div>          </div>        </div>,V
-png,v
-images/,v
-/,v
-lat,v
-div,v
-              <img class="w-[72px] h-[72px] absolute top-0 -left-0.5" src="{% static 'dealmatch/assets/teal_ribbon_tl.svg' %}" alt="ribbon-top-left" />              <img class="w-[72px] h-[72px] absolute -bottom-0.5 right-0" src="{% static 'dealmatch/assets/teal_ribbon_br.svg' %}" alt="ribbon-bottom-right" />,V
-text-black ,v
- font-bold,v
-lg,v
-m,v
-semibold,v
-하기,v
+[,v
+{,v
 },v
-%,v
-text-[13px],v
-                <li><span class="text-black font-bold mr-2">2</span>{% translate '업계 종사자 인증 딜매치 회원들이 딜 열람 후 제안하는 방식' %}</li>,V
-ㄷ익명 또는 기명으로 딜 등록 가능,v
-ㄷ,v
-                <li><span class="text-black font-bold mr-2">2</span>{% translate 'ㄷ익명 또는 기명으로 딜 등록 가능' %}</li>,V
-                <li><span class="text-black font-bold mr-2">3</span>{% blocktranslate %}소액의 월 정액 플랫폼 사용료(구독료)만으로<br /><span class="ml-3">업계 전문가들과 네트워크 형성</span>{% endblocktranslate %}</li>,V
-업계 종사자 회원들이 딜 열람 후 제안하는 방식,v
-오픈마켓에 딜 등록,v
-base,v
-llll양한 회원의 제안을 자유롭게 받아볼 수 있는 방식,v
-다,v
- px-3,v
- gap-10,v
-justify-center,v
- justify-center,v
-                {% translate '오픈마켓에 딜을 등록하여, 다양한 회원의 제안을 자유롭게 받아볼 수 있는 방식' %},V
->,v
- bg-gray-50,v
+        return {k:v},V
+data,v
+,V
+    def map_,V
+        lots_data = [lot.get_api_data() for lot in self.lots.all()],V
+lots_data,v
+[],v
+[lot.get_api_data() for lot in self.lots.all()],v
+    def ,V
+api,v
+lots_api,v
+            data[k].append(v),V
+            data.,V
+        {            'address':         },V
+    # refactor,V
+    def map_value(self):,V
+        data = {},V
+map_value_to_func,v
+        data = {}        def add_data(k, v):            data.setdefault(k, 0)            data[k] += float(v)        def append_data(k, v):            data.setdefault(k, [])            if v in data[k]:                return            data[k].append(v)        def append_land_character_property_data(v):            latest_data = v[-1]            add_data('land_area', latest_data['lndpclAr'])            append_data('land_destrict', latest_data['prposArea1Nm'])            append_data('official_land_price', latest_data['pblntfPclnd'])            append_data('land_category', latest_data['lndcgrCodeNm'])        map_value_to_func = {            'address': lambda v: append_data('addresses', v),            'land_character_property': lambda v: append_land_character_property_data(v)        },V
+        def,V
+        def add_data(k, v):            data.setdefault(k, 0)            data[k] += float(v),V
+            _value = ,V
+_value,v
+', '.join(v) if isinstance(v, list) else v,v
+\,v
+        ''',V
+',v
+            data = {k:value },V
+            if ,V
+        for,V
+        lots = self.lots.all(),V
+lots,v
+            if v not in data[k]:,V
+                data[k].append(v),V
+        lots = self.lots.all()        lots_data =  [lot.get_api_data() for lot in lots],V
+append_,v
+            data[],V
+    exceptions as exc,V
+gen = ,v
+s,v
+        for report in reports:,V
+report,v
+        report,V
+        reports = m.UserDevelopablePropertyReport.objects.filter(),V
+filter,v
+        report = ,V
+        generate_developable_property_report(report.id),V
+        gener,V
+        _propert,V
+        report = m.UserDevelopablePropertyReport.objects.create(            user=user,            developable_property=_property,        ),V
+    def generate_report_docx(self, data=None, report_template=None, filename=None):        data = data or self.get_api_data()        if not report_template:            raise exc.DevelopablePropertyReportTemplateDoseNotExists()        doc = docx.DmDocx(report_template)        doc_mapping_data = {'{{%s}}' % k:v for k,v in data.items()}        doc.replace_paragraph_string(doc_mapping_data)        doc.replace_table_cell_string(doc_mapping_data)        with tempfile.TemporaryFile() as f:            doc.save(f)            f.seek(0)            self.attach(f, filename),V
+    def get_api_data(self):        _property = self.developable_property        lots_data = _property.get_lots_api_data()        data = {}        def append_data(k, v):            data.setdefault(k, [])            if v not in data[k]:                data[k].append(v)        def add_data(k, v):            data.setdefault(k, 0)            data[k] += float(v)        def append_land_character_property_data(v):            latest_data = v[-1]            add_data('land_area', latest_data['lndpclAr'])            append_data('land_destrict', latest_data['prposArea1Nm'])            append_data('official_land_price', latest_data['pblntfPclnd'])            append_data('land_category', latest_data['lndcgrCodeNm'])        map_value_to_func = {            'address': lambda v: append_data('addresses', v),            'land_character_property': lambda v: append_land_character_property_data(v)        }        for lot_data in lots_data:            for k,v in lot_data.items():                if k in map_value_to_func:                    map_value_to_func[k](v)        return data,V
+        def append_data(k, v):            data.setdefault(k, [])            if v not in data[k]:                data[k].append(v)        def add_data(k, v):            data.setdefault(k, 0)            data[k] += float(v)        def append_land_character_property_data(v):            latest_data = v[-1]            add_data('land_area', latest_data['lndpclAr'])            append_data('land_destrict', latest_data['prposArea1Nm'])            append_data('official_land_price', latest_data['pblntfPclnd'])            append_data('land_category', latest_data['lndcgrCodeNm'])        map_value_to_func = {            'address': lambda v: append_data('addresses', v),            'land_character_property': lambda v: append_land_character_property_data(v)        }        for lot_data in lots_data:            for k,v in lot_data.items():                if k in map_value_to_func:                    map_value_to_func[k](v)        return data,V
+return,v
+            print('try generate report file'),V
+file,v
+        print,V
+        filename = 'test.docx',V
+ filename,,v
+            filename = 'test.docx',V
+, filename,v
+report_name,v
+report_file,v
+            template = m.UserDevelopablePropertyReportTemplate.objects.all()\                                                                      .order_by('-created_at')\                                                                      .last(),V
+            report_file = report.generate_report_docx(template),V
+            report_name = urllib.parse.quote_plus(report_file.name.replace(' ', '')),V
+            report_file = report.generate_report_docx(template)            report_name = urllib.parse.quote_plus(report_file.name.replace(' ', '')),V
+        data = report.get_api_data()        ReportTemplate = m.UserDevelopablePropertyReportTemplate        template = ReportTemplate.objects.all().last().resource        print('try generate report file')        filename = 'test.docx'        gen = rg.DevelopablePropertyReportGenerator(            data, template, filename, report        )        gen.generate(),V
+        file = report.generate_report_docx(template),V
+        ReportTemplate = m.UserDevelopablePropertyReportTemplate        template = ReportTemplate.objects.all().last(),V
+        template ,V
+        report = m.UserDevelopablePropertyReport.objects.get(id=report_obj_id)        ReportTemplate = m.UserDevelopablePropertyReportTemplate        template = ReportTemplate.objects.all().last(),V
+TemporaryDirectory,v
+        developable_property_report.generate_report_docx(data, template),V
+    report_generator as rg,V
+    @pytest.mark.django_db    def test_generate_report(self, developable_property_report,              developable_property_report_template):        data = {            'addresses': '삼성동118-24, 삼성동118-23'        }        template = developable_property_report_template.resource        assert template        developable_property_report.generate_report_docx(data, template)        report_file = developable_property_report.resource        assert report_file        doc = docx.DmDocx(report_file)        paragraph_text = doc.get_paragraph_text()        assert data['addresses'] in paragraph_text,V
+        self.doc = docx.DmDocx(template),V
+            f.seek(0),V
+ping,v
+?,v

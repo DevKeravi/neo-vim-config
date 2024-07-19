@@ -3,10 +3,11 @@
     "htmldjango.formatting.provider": "none",
     "htmldjango.djlint.enableLint": false,
     "htmldjango.completion.enable": true,
+    "python.runLinting": true,
+    "python.jediEnabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.pydocstyleEnabled": true,
-    "python.jediEnabled": true,
     "python.venvPath": "~/workspace/venv-dealmatch",
     "python.globalModuleInstallation": false
 }

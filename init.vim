@@ -102,7 +102,7 @@ Plug 'lilydjwg/colorizer'
 " Window chooser
 Plug 't9md/vim-choosewin'
 " Automatically sort python imports
-Plug 'fisadev/vim-isort'
+" Plug 'fisadev/vim-isort'
 " Highlight matching html tags
 Plug 'valloric/MatchTagAlways'
 " Generate html in a simple way
@@ -486,6 +486,7 @@ let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
+
 
 
 set termguicolors

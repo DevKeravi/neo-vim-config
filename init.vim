@@ -3,6 +3,7 @@
 " version: 12.0.1
 
 " To use fancy symbols wherever possible, change this setting from 0 to 1
+"
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal 
 " (if you aren't using one of those fonts, you will see funny characters here. 
 " Turst me, they look nice when using one of those fonts).
@@ -110,7 +111,7 @@ Plug 'mattn/emmet-vim'
 " Git integration
 Plug 'tpope/vim-fugitive'
 " Git/mercurial/others diff icons on the side of the file lines
-Plug 'mhinz/vim-signify'
+" Plug 'mhinz/vim-signify'
 " Yank history navigation
 Plug 'vim-scripts/YankRing.vim'
 " Linters
@@ -147,7 +148,6 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'nvim-neotest/neotest'
 Plug 'vim-test/vim-test'
-Plug 'tpope/vim-fugitive'
 Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
 " Plug 'ryanoasis/vim-devicons' Icons without colours
 Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
@@ -161,6 +161,14 @@ Plug 'psliwka/vim-smoothie'
 Plug 'alvan/vim-closetag'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'andythigpen/nvim-coverage'
+
+Plug 'vim-denops/denops.vim'
+
+"For DB Connection
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'kristijanhusak/vim-dadbod-completion' "Optional
+
 
 call plug#end()
 
@@ -487,13 +495,23 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
+let g:denops#deno = '/Users/demian/.deno/bin/deno'
+inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<TAB>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>"
 
 
 set termguicolors
 lua << EOF
 require("bufferline").setup{}
 require("coverage").setup{}
+
+require("coverage").setup{}
 EOF
+
+augroup AutoCoverage
+    autocmd!
+    autocmd BufReadPost *.py lua vim.cmd('Coverage')
+augroup END
 
 " 이 옵션은 버퍼를 수정한 직후 버퍼를 감춰지도록 한다.
 " 이 방법으로 버퍼를 사용하려면 거의 필수다.

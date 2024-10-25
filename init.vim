@@ -144,7 +144,7 @@ Plug 'yaegassy/coc-htmldjango', {'do': 'yarn install --frozen-lockfile'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'rking/ag.vim'
 Plug 'sindrets/diffview.nvim'
-Plug 'nvim-treesitter/nvim-treesitter'
+" Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'nvim-neotest/neotest'
 Plug 'vim-test/vim-test'
@@ -163,12 +163,17 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'andythigpen/nvim-coverage'
 
 Plug 'vim-denops/denops.vim'
+Plug 'APZelos/blamer.nvim'
+
+Plug 'puremourning/vimspector'
 
 "For DB Connection
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'kristijanhusak/vim-dadbod-completion' "Optional
 
+"For LSP
+Plug 'williamboman/mason.nvim'
 
 call plug#end()
 
@@ -499,19 +504,34 @@ let g:denops#deno = '/Users/demian/.deno/bin/deno'
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<TAB>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>"
 
+let g:db_ui_env_variable_url = 'DEALMATCH_DB_URL'
+let g:db_ui_env_variable_name = 'DEALMATCH_DB_NAME'
+
+let g:blamer_enabled = 1
+let g:blamer_delay = 500
+
+" vimspector
+let g:vimspector_enable_mappings = 'HUMAN'
+" for normal mode - the word under the cursor
+nmap <Leader>di <Plug>VimspectorBalloonEval
+" for visual mode, the visually selected text
+xmap <Leader>di <Plug>VimspectorBalloonEval
+let g:vimspector_base_dir='/Users/demian/.config/nvim/plugged/vimspector'
+let g:vimspector_configurations = {
+    \ 'django': {
+    \   'adapter': 'debugpy',
+    \   'configuration': {
+    \     'request':  'launch',
+    \     'stopOnEntry': v:true,
+    \     'python': '${VIRTUAL_ENV}/bin/python3',
+    \     'program': '~/workspace/dealmatch/manage.py',
+    \     'args': [ 'runserver', 'localhost:8080', '--settings=dealmatch_market.site.settings' ],
+    \     'django': v:true
+    \   }
+    \ }
+\ }
 
 set termguicolors
-lua << EOF
-require("bufferline").setup{}
-require("coverage").setup{}
-
-require("coverage").setup{}
-EOF
-
-augroup AutoCoverage
-    autocmd!
-    autocmd BufReadPost *.py lua vim.cmd('Coverage')
-augroup END
 
 " 이 옵션은 버퍼를 수정한 직후 버퍼를 감춰지도록 한다.
 " 이 방법으로 버퍼를 사용하려면 거의 필수다.
@@ -535,4 +555,15 @@ nmap ,b :NERDTreeToggle<CR>
 set clipboard=unnamed
 colorscheme dracula
 set nospell
+
+lua << EOF
+require("bufferline").setup{}
+require("coverage").setup{}
+require("mason").setup()
+EOF
+
+augroup AutoCoverage
+    autocmd!
+    autocmd BufReadPost *.py lua vim.cmd('Coverage')
+augroup END
 
